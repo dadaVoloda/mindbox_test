@@ -1,0 +1,54 @@
+.todo {
+  position: relative;
+  background-color: var(--white-color);
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.label {
+  display: block;
+  padding: 10px 6px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.input:focus-visible ~ .label {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.text::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--bg-color);
+  border-radius: 50%;
+}
+
+.completed .text {
+  color: var(--gray-color);
+  text-decoration: line-through;
+}
+
+.completed .text::before {
+  background-image: url('../../assets/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: rgba(28, 156, 66, 0.35);
+}

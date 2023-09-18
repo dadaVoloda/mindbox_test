@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  background-color: var(--white-color);
+  margin-bottom: 3px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  font: inherit;
+  border: none;
+}
+
+.input::placeholder {
+  font-weight: 300;
+}
+
+.input:focus {
+  outline: transparent;
+}
+
+.btn {
+  flex-shrink: 0;
+  padding: 0 10px;
+}

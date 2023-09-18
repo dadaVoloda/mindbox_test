@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 10px;
+  background-color: var(--white-color);
+}
